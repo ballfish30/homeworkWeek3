@@ -1,4 +1,5 @@
 # homeworkWeek3
+  '''
   function re(){     
         $.ajax({     
         type: "get",      
@@ -8,4 +9,5 @@
             newsList = JSON.parse(e);     
             refreshUI();    
         })     
-    }     
+    } 
+ '''
