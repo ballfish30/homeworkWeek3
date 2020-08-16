@@ -31,6 +31,7 @@ console.log("鍵盤「Ctrl + C」可結束伺服器程式.");
 
 // 建立資料庫連線
 var mysql = require('mysql');
+const { request } = require("http");
 var connection = mysql.createConnection({
 	host : '127.0.0.1',
 	user : 'root',
