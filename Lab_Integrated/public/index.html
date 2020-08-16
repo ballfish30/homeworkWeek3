@@ -186,6 +186,23 @@ $(function () {
         $("#newsModal").modal({backdrop: "static"});
     })
 
+    // 新增新Item
+    $("#okButton").on("click", function(){
+        let dataToServer = {
+            title: $("#titleTextBox").val(),
+            ymd: $("#ymdTextBox").val()
+        }
+        $.ajax({
+                type: "post",
+                url: "/home/news",
+                data: dataToServer
+            })
+            .then(function(e){
+                re();
+                $("#newsModal").modal("hide");
+        })
+    })
+
 
 
 
